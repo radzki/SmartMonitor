@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Campus + Verde</title>
+
+	<link rel="stylesheet" href="{{ url_for('static', filename='demo.css') }}">
+	<link rel="stylesheet" href="{{ url_for('static', filename='form.css') }}">
+
+</head>
+<body>
+
+    <div class="main-content">
+
+        <!-- You only need this form and the form-labels-on-top.css -->
+
+        <form class="form-labels-on-top" action="http://192.168.1.124:5000/" method="post">
+
+            <div class="form-title-row">
+                <h1>Olá, {{nome}}! </h1>
+            </div>
+            <div class="form-title-row">
+                <h2><p>Você está na sala: {{sala}}, Bloco {{ bloco }}</h2>
+            </div>
+            <div class="form-row">
+                <label>
+                    <span>1 - Qual o tipo de problema?</span>
+                    <select id="class_select" name="class_select">
+                        <option value="1">Hídrico</option>
+                		<option value="2">Elétrico</option>
+                		<option value="3">Refrigeração</option>
+                		<option value="4">Edificação</option>
+                		<option value="5">Outros</option>
+                    </select>
+                </label>
+            </div>
+            <div class="form-row">
+                <label>
+                <span>2 - Relate sobre o problema:</span>
+                <textarea placeholder="Ex.: Torneira não está fechando corretamente. Está pingando."></textarea>
+                <input type="hidden" value="{{ local }}" name="local" id="local">
+                </label>
+            </div>
+
+            <div class="form-row">
+                <label>
+                <span>3 - Local exato do equipamento com problema:</span>
+                <textarea placeholder="Ex.: Segunda torneira do banheiro feminino."></textarea>
+                </label>
+            </div>
+            <div class="form-row-centered">
+                <label>
+                    <span><input type="checkbox" name="feedback" checked> Desejo receber o feedback da solicitação em {{ email }}</span>
+                </label>
+            </div>
+
+            <div class="form-row-centered">
+                <button type="">Anexar Imagem</button>
+                <button type="submit">Enviar</button>
+            </div>
+
+        </form>
+
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Login</title>
+    <script src="{{ url_for('static', filename='gradient.js') }}"></script>
+	<link rel="stylesheet" href="{{ url_for('static', filename='demo.css') }}">
+	<link rel="stylesheet" href="{{ url_for('static', filename='login.css') }}">
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+    <script>
+
+    function digitos(){
+
+      var selectBox = document.getElementById("class_select");
+      var selectedValue = selectBox.options[selectBox.selectedIndex].value;
+      if (selectedValue == 101){
+        document.getElementById("matricula").value = "";
+        document.getElementById("matricula").placeholder = "9 dígitos";
+        document.getElementById("matricula").maxLength = "9";
+      }
+      else{
+        document.getElementById("matricula").value = "";
+        document.getElementById("matricula").placeholder = "8 dígitos";
+        document.getElementById("matricula").maxLength = "8";
+      }
+
+    };
+
+    </script>
+</head>
+<body onload="digitos()">
+
+    <div class="main-content">
+
+        <!-- You only need this form and the form-labels-on-top.css -->
+
+        <form class="form-labels-on-top" action="http://192.168.1.124:5000/" method="post">
+
+            <div class="form-title-row">
+                <h1>Login</h1>
+            </div>
+
+            <div class="form-row">
+                <label>
+                    <span>Quem é você?</span>
+                    <select id="class_select" name="class_select" onchange="digitos()">
+                        <option value="101">Aluno</option>
+                		<option value="102">Professor</option>
+                		<option value="103">Técnico ou Colaborador</option>
+                		<option value="104">Tecnopuc</option>
+                    </select>
+                </label>
+            </div>
+
+            <div class="form-row">
+                <label>
+                    <span>Matrícula</span>
+                    <input id="matricula" type="text" maxlength="9" placeholder="9 dígitos" name="matricula" required>
+                </label>
+            </div>
+
+            <div class="form-row">
+                <label>
+                    <span>Senha</span>
+                    <input id="passwd" type="password" maxlength="4" placeholder="4 dígitos" name="passwd" required>
+                    <input id="local" type="hidden" name="local" value="{{ codigo }}">
+                </label>
+            </div>
+
+            <div class="form-row">
+                <button type="submit">Login</button>
+            </div>
+
+        </form>
+
+    </div>
+
+</body>
+
+</html>

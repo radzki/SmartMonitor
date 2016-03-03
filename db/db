@@ -1,0 +1,62 @@
+BEGIN TRANSACTION;
+CREATE TABLE `locais` (
+	`bloco`	,
+	`pavimento`	,
+	`nomeSala`	,
+	`numeroSala`	,
+	`codigo`	
+);
+INSERT INTO `locais` VALUES('D','S1 -Subsolo','Administrativo ','S1.01','C.30.D.S1.01');
+INSERT INTO `locais` VALUES('D','S1 -Subsolo','Almoxarifado','S1.01-01','C.30.D.S1.01-01');
+INSERT INTO `locais` VALUES('D','S1 -Subsolo','Banheiro Adm.','S1.01-BA','C.30.D.S1.01-BA');
+INSERT INTO `locais` VALUES('D','S1 -Subsolo','Lab. de Ensino','S1.02','C.30.D.S1.02');
+INSERT INTO `locais` VALUES('D','S1 -Subsolo','Lab. Adm. ','S1.02-01','C.30.D.S1.02-01');
+INSERT INTO `locais` VALUES('D','S1 -Subsolo','Sala Pesquisa ','S1.02-02','C.30.D.S1.02-02');
+INSERT INTO `locais` VALUES('D','S1 -Subsolo','Lab. de Ensino','S1.02-03','C.30.D.S1.02-03');
+INSERT INTO `locais` VALUES('D','S1 -Subsolo','Almoxarifado','S1.02-04','C.30.D.S1.02-04');
+INSERT INTO `locais` VALUES('D','S1 -Subsolo','Lab. de Ensino','S1.02-05','C.30.D.S1.02-05');
+INSERT INTO `locais` VALUES('D','S1 -Subsolo','Subestacao','S1.02-MA','C.30.D.S1.02-MA');
+INSERT INTO `locais` VALUES('D','S1 -Subsolo','Lab. de Ensino','S1.03','C.30.D.S1.03');
+INSERT INTO `locais` VALUES('D','S1 -Subsolo','Sala de Equip.','S1.02-01','C.30.D.S1.02-01');
+INSERT INTO `locais` VALUES('D','S1 -Subsolo','Subestacao','S1.02-MA','C.30.D.S1.02-MA');
+INSERT INTO `locais` VALUES('D','S1 -Subsolo','Lab. de Ensino','S1.04','C.30.D.S1.04');
+INSERT INTO `locais` VALUES('D','S1 -Subsolo','Lab. de Ensino','S1.05','C.30.D.S1.05');
+INSERT INTO `locais` VALUES('D','S1 -Subsolo','Sala Manut.','S1.06','C.30.D.S1.06');
+INSERT INTO `locais` VALUES('D','S1 -Subsolo','Deposito','S1.06-DA','C.30.D.S1.06-DA');
+INSERT INTO `locais` VALUES('D','S1 -Subsolo','Escada','S1.EA ','C.30.D.S1.EA');
+INSERT INTO `locais` VALUES('D','S1 -Subsolo','Hall','S1.HA','C.30.D.S1.HA');
+INSERT INTO `locais` VALUES('D','S1 -Subsolo','Subestacao','S1.MA','C.30.D.S1.MA');
+INSERT INTO `locais` VALUES('D','01 - Pav. 01','Copa',101,'C.30.D.01.01');
+INSERT INTO `locais` VALUES('D','01 - Pav. 01','Administrativo ',102,'C.30.D.01.02');
+INSERT INTO `locais` VALUES('D','01 - Pav. 01','Ar Cond. Fan Coil','102-AA','C.30.D.01.02-AA');
+INSERT INTO `locais` VALUES('D','01 - Pav. 01','Monitoria',103,'C.30.D.01.03');
+INSERT INTO `locais` VALUES('D','01 - Pav. 01','Sala de Aula',105,'C.30.D.01.05');
+INSERT INTO `locais` VALUES('D','01 - Pav. 01','Sala de Aula',106,'C.30.D.01.06');
+INSERT INTO `locais` VALUES('D','01 - Pav. 01','Sala de Aula',107,'C.30.D.01.07');
+INSERT INTO `locais` VALUES('D','01 - Pav. 01','Sala de Aula',108,'C.30.D.01.08');
+INSERT INTO `locais` VALUES('D','01 - Pav. 01','Coordenacao ',109,'C.30.D.01.09');
+INSERT INTO `locais` VALUES('D','01 - Pav. 01','Sala de Estudos',110,'C.30.D.01.10');
+INSERT INTO `locais` VALUES('D','01 - Pav. 01','Sala de Aula',111,'C.30.D.01.11');
+INSERT INTO `locais` VALUES('D','02 - Pav. 02','Sala de Aula',201,'C.30.D.02.01');
+INSERT INTO `locais` VALUES('D','02 - Pav. 02','Sala de Aula',202,'C.30.D.02.02');
+INSERT INTO `locais` VALUES('D','02 - Pav. 02','Sala de Aula',203,'C.30.D.02.03');
+INSERT INTO `locais` VALUES('D','02 - Pav. 02','Sala de Aula',204,'C.30.D.02.04');
+INSERT INTO `locais` VALUES('D','02 - Pav. 02','Sala de Aula',205,'C.30.D.02.05');
+INSERT INTO `locais` VALUES('D','02 - Pav. 02','Sala de Aula',206,'C.30.D.02.06');
+INSERT INTO `locais` VALUES('D','02 - Pav. 02','Sala de Aula',207,'C.30.D.02.07');
+INSERT INTO `locais` VALUES('D','02 - Pav. 02','Sala de Aula',210,'C.30.D.02.10');
+INSERT INTO `locais` VALUES('D','02 - Pav. 02','Banheiro Fem.','02.BA','C.30.D.02.BA');
+INSERT INTO `locais` VALUES('D','02 - Pav. 02','Banheiro Mas.','02.BB','C.30.D.02.BB');
+INSERT INTO `locais` VALUES('D','02 - Pav. 02','Circulacao','02.CA','C.30.D.02.CA');
+INSERT INTO `locais` VALUES('D','03 - Pav. 03','Sala de Aula',301,'C.30.D.03.01');
+INSERT INTO `locais` VALUES('D','03 - Pav. 03','Sala de Aula',302,'C.30.D.03.02');
+INSERT INTO `locais` VALUES('D','03 - Pav. 03','Sala de Aula',303,'C.30.D.03.03');
+INSERT INTO `locais` VALUES('D','03 - Pav. 03','Sala de Aula',304,'C.30.D.03.04');
+INSERT INTO `locais` VALUES('D','03 - Pav. 03','Sala de Aula',305,'C.30.D.03.05');
+INSERT INTO `locais` VALUES('D','03 - Pav. 03','Sala de Aula',306,'C.30.D.03.06');
+INSERT INTO `locais` VALUES('D','03 - Pav. 03','Sala de Aula',307,'C.30.D.03.07');
+INSERT INTO `locais` VALUES('D','03 - Pav. 03','Sala de Aula',310,'C.30.D.03.10');
+INSERT INTO `locais` VALUES('D','03 - Pav. 03','Banheiro Fem.','03.BA','C.30.D.03.BA');
+INSERT INTO `locais` VALUES('D','03 - Pav. 03','Banheiro Mas.','03.BB','C.30.D.03.BB');
+INSERT INTO `locais` VALUES('D','03 - Pav. 03','Circulacao','03.CA','C.30.D.03.CA');
+COMMIT;
